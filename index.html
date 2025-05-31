@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TriCorp</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/tricorp_logo.png" rel="icon">
+
+<!-- Fonts / Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+  <link href="assets/css/new.css" rel="stylesheet">
+</head>
+
+<body class="index-page" >
+<!-- ------------ NAVBAR -------------->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="logo me-auto">
+      <img src="assets/img/tricorp_logo.png" alt="TriCorp Logo" class="logo-img">
+      <span class="company-name">TriCorp</span> 
+  </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="#hero" class="nav-link ">About</a></li>
+        <li><a href="#focus" class="nav-link">Focus</a></li>
+        <li class='information'><a href="#info" class="nav-link">Info</a></li>
+        <li class="dropdown">
+          <a class="nav-link"> Partners <i class="bi bi-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://Grupovechmo.com" target="_blank">Grupo Vechmo </a></li>
+            <li><a href="http://www.thailandquartzstone.com" target="_blank">Thailand Quartz and Stone</a></li>
+            <li><a href="http://duvaltrading.com" target="_blank">Duval Trading</a></li>        
+            <!-- Add more partners as needed -->
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn-getstarted">Contact</a>
+
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </div>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const scrollLinks = document.querySelectorAll('.nav-link, .footer-link');
+  
+        for (const scrollLink of scrollLinks) {
+          scrollLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              const offset = targetElement.getBoundingClientRect().top + window.scrollY;
+              const headerOffset = document.querySelector('header').offsetHeight;
+              window.scrollTo({
+                top: offset - headerOffset,
+                behavior: 'smooth'
+              });
+            }
+          });
+        }
+      });
+    </script>
+</header>
+<!-------------- NAVBAR ------------ -->
+
+<!-------------- ABOUT US -------------->
+<main class="main">
+  <section id="hero" class="hero section" >
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6 order-lg-1">
+          <h1>Who We Are</h1>
+          <p>We are a boutique consulting firm focused on the basic principles of the "Know How" and the "Know Who" of businesses. TriCorp is your one-stop shop if you want to create a new business, improve your sales, define your next strategic move or simply connect and build trustful business and trading relationships.</p>
+          <div class="d-flex">
+            <a href="#started" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2 d-flex justify-content-center"> 
+          <img src="assets/img/tricorp.png" class="img-fluid animated" alt="TriCorp Logo" style="max-width: 80%; margin-left: 20px;"> 
+        </div>
+      </div>
+    </div>
+  </section>
+<!-------------- ABOUT US -------------->
+
+<!-------------- FOCUS -------------->
+<section id="focus" class="focus section">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2>OUR FOCUS</h2>
+    </div>
+    <div class="row">
+        <p> We focus on advising, consulting, and bringing venture projects to life. We have performed businesses turn arounds as well as many successful business expansions, mergers, and acquisitions in the areas of news media, radio, telecommunications, restaurants, entertainment, banking, and finance, among others in the Latin American Market. </p>  
+    </div>
+  </div>
+</section>
+<!-------------- FOCUS -------------->
+
+<!-------------- INFO -------------->
+<section id="info" class="info section">
+  <div class="container">
+    <div class="row">
+
+      <!-- EXPERIENCE -->
+      <div class="col-lg-4">
+        <div class="info-title">
+          <h2>EXPERIENCE</h2>
+        </div>
+        <div class="info-content">
+          <p> With more than 30 years in several industries, we decided to alter direction. Now, we share our passion by helping others. Our breakthrough process is designed to empower your business. </p>    
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="col-lg-4">
+        <div class="info-title">
+          <h2>PROCESS</h2>
+        </div>
+        <div class="info-content">
+          <p> We believe that humanity is tripartite: Spirit, Soul, and Body; our reflection as human beings enlightens our business life. Our vision is to create businesses with a purpose and impact on others' lives.          </p>    
+        </div>
+      </div>
+
+      <!-- TRADING -->
+      <div class="col-lg-4">
+        <div class="info-title">
+          <h2>TRADING</h2>
+        </div>
+        <div class="info-content">
+          <p> During the pandemic of novel COVID-19, we built an efficient bridge of procurement of Personal Protective Equipment (PPE) products for our clients that needed them. However, it took us to search for the most reliable sellers in the field, and through this, we found these fantastic new trading partners. We expanded our networking threefold.</p> 
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-------------- INFO -------------->
+
+
+<section id="contact" class="contact section">
+  <div class = "contact-container">
+    <!-- <div class = "contact-left">
+      <img src="assets/img/tricorp_logo.png">
+    </div> -->
+    <form action="https://api.web3forms.com/submit" method="POST" class = "contact-right">
+      <div class = "contact-right-title text-center mb-3" >
+        <h2> Contact Us </h2>
+        <hr>
+        <h3>info@tricorp.us</h3>
+      </div>
+      <input type="hidden" name="access_key" value="61687b4e-9a3f-41d8-b6bc-eda43d5efbcf"> <!--update key-->
+      <input type="text" name="name" placeholder= "Your Name" class="contact-inputs" required>
+      <input type="email" name="email" placeholder= "Your Email" class="contact-inputs" required>
+      <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+      <button type="submit"> Submit </button>
+    </form>
+  </div>  
+</section>
+
+<!-- ------------ FOOTER -------------->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Us Column -->
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <ul class="list-unstyled">
+          <li><a href="mailto:info@tricorp.us" class="contact-link">info@tricorp.us <i class="bi bi-envelope"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Our Partners Column -->
+      <div class="col-md-4">
+        <h4>Our Partners</h4>
+        <ul class="list-unstyled">
+          <li><a href="http://Grupovechmo.com" target="_blank">Grupo Vechmo</a></li>
+          <li><a href="http://www.thailandquartzstone.com" target="_blank">Thailand Quartz and Stone</a></li>
+          <li><a href="http://duvaltrading.com" target="_blank">Duval Trading</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="#hero">About Us</a></li>
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2024 TriCorp. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ------------ FOOTER -------------->
+
+
+  </main>
+
+
+
+</body>
+</html>

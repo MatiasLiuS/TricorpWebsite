@@ -1,0 +1,524 @@
+
+
+@font-face {
+    font-family: 'Kravitz';
+    src: url('../fonts/KRAVITZ_.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/KRAVITZ_.woff') format('woff');  /* Legacy Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navbar */
+.header {
+    --background-color: #3d4d6a;
+    --heading-color: #ffffff;
+    --default-color: var(--heading-color);
+    --accent-color: #4a90e2; /* Lighter shade of blue */
+    --contrast-color: #ffffff;
+    --nav-color: var(--default-color);
+    --nav-hover-color: var(--accent-color); /* Lighter shade of blue */
+    --nav-font: font-family: 'Kravitz', sans-serif; /* Use Kravitz font with fallback to sans-serif */
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+  
+.header .logo {
+    line-height: 1;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+  
+.header .logo img {
+    max-height: 36px; /* Adjust logo size */
+    margin-right: 8px;
+}
+  
+.header .logo .company-name {
+    font-family: 'Kravitz', sans-serif; /* Use Kravitz font with fallback to sans-serif */
+    font-size: 22px; /* Adjust font size */
+    font-weight: 500;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.navbar {
+    margin-left: auto;
+}
+  
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.navbar li {
+    margin-right: 0px;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 18px 15px;
+    transition: 0.3s;
+}
+  
+.navbar a:hover,
+.navbar .active {
+    color: var(--nav-hover-color);
+}
+  
+.btn-getstarted {
+    background-color: rgb(0, 119, 255);
+    color: var(--contrast-color);
+    padding: 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 30px;
+}
+  
+.btn-getstarted:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    background-color: #37517e;
+    color: #ffffff; /* Ensure text color contrasts with background */
+    padding-bottom: 100px;
+    padding-top: 200px;
+}
+  
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+  
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+  
+.hero .btn-get-started {
+    color: #ffffff;
+    background-color: #4a90e2;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+  
+.hero .hero-img img {
+    max-width: 100%; /* Ensure image responsiveness */
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# About Us Section
+--------------------------------------------------------------*/
+.about-us {
+    background-color: #37517e; /* Adjust as needed */
+    color: #ffffff; /* Text color */
+    padding: 100px 0;
+}
+  
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.about-us .text-content {
+    width: 50%; /* Adjust width as needed */
+}
+  
+.about-us h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+  
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+  
+.about-us .btn-get-started {
+    background-color: #4a90e2; /* Lighter shade of blue */
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.about-us .btn-get-started:hover {
+    background-color: #3d4d6a; /* Darker shade of blue */
+}
+  
+.about-us .hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.about-us .hero-img img {
+    max-width: 100%; /* Ensure image does not exceed container */
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# Partners Section
+--------------------------------------------------------------*/
+#partners {
+    height: auto; /* Remove fixed height to allow content to dictate height */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+#partners h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+  
+.partner-logo {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50px; /* Limit maximum height of the logos */
+}
+
+/*--------------------------------------------------------------
+# Focus Section
+--------------------------------------------------------------*/
+#focus {
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#focus .section-title {
+    margin-bottom: 50px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this */
+    display: inline-block; /* To contain the pseudo-element within the title */
+    color: #012f6f; /* Set the title color to the blue used in the navbar */
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+}
+
+#focus .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value to position the underline */
+    left: 50%; /* Position the underline in the center */
+    transform: translateX(-50%);
+    width: 50%; /* Adjust the width of the underline */
+    height: 2px; /* Height of the underline */
+    background: linear-gradient(to right, #4a90e2, #37517e); /* Gradient color for the underline */
+}
+
+#focus p {
+    font-size: 15px; /* Adjusted font size */
+    line-height: 1.6;
+    text-align: left; /* Align text to the left */
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+} /*#d9d9d9;
+
+
+/*--------------------------------------------------------------
+# Info Section
+--------------------------------------------------------------*/
+#info {
+    background-color: #d5dae0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+
+#info .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#info .info-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#info .info-title h2 {
+    color: #012f6f;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+}
+
+#info .info-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #4a90e2, #37517e);
+}
+
+#info .info-content {
+    text-align: left;
+}
+
+#info .info-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact{  
+background:#ffffff;
+color: #040404; /* Text color */
+padding-top: 20px;
+padding-bottom: 30px;
+font-family: "Poppins", sans-serif;
+}
+
+#contact .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact .contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact .contact-right-title{
+    margin-bottom: 100px;
+    position: center; /* Ensure the pseudo-element is positioned relative to this */
+    display: inline-block; /* To contain the pseudo-element within the title */
+    color: #012f6f; /* Set the title color to the blue used in the navbar */
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+}
+
+#contact .contact-right-title h3{
+    position: center; /* Ensure the pseudo-element is positioned relative to this */
+    display: inline-block; /* To contain the pseudo-element within the title */
+    color: #012f6f; /* Set the title color to the blue used in the navbar */
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+    font-size: medium;
+}
+
+#contact .contact-right-title::after{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background:#3700ff;
+    border-radius: 10px;
+    margin-bottom: px;
+}
+#contact .contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: #040404;
+    border-radius: 50px;
+    border: 2px solid #87b8e9;
+}
+#contact .contact-right textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+#contact .contact-inputs:focus{
+   border: 2px solid #3700ff;
+}
+#contact .contact-inputs::placeholder{
+color: #a9a9a9;
+} 
+#contact .contact-right button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #012f6f, #4a90e2)
+}
+
+#contact .contact-left img{
+    width: 500px;
+
+}
+
+@media (max-width: 800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-left{display: none;}
+}
+
+
+  /* Dropdown menu styles */
+.navbar ul li {
+    position: relative;
+  }
+  
+  .navbar ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Optional: Box shadow for dropdown */
+    z-index: 1;
+  }
+  
+  .navbar ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar ul li .dropdown-menu li {
+    display: block;
+  }
+
+  .navbar ul li .dropdown-menu li a {
+    color: #333; /* Text color of dropdown items */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }  
+  /* Highlight on hover */
+  .navbar ul li .dropdown-menu li a:hover {
+    color: #3700ff; /* Background color on hover */
+  }
+  
+  .navbar ul li .dropdown-menu li.active a {
+    background-color: #7f7c7c; /* Highlight color for active (hovered) item */
+  }
+
+
+ /* Footer Styles */
+
+.footer {
+  background-color: #37517e;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+ul.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 8px;
+}
+
+ul.list-unstyled li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition on color change */
+}
+
+ul.list-unstyled li a:hover {
+  color: #f8f9fa; /* Lighter color on hover */
+}
+
+/* Center copyright text */
+.footer .container {
+  text-align: center;
+}
+
+.footer .contact-link {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.footer .contact-link:hover {
+  color: #fff; 
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+
+    .navbar {
+        align-items: center; /* Center items horizontally */
+    }
+
+    .navbar ul {
+        width: 100%; /* Ensure full width on mobile */
+        text-align: center; /* Center text */
+        display: flex; /* Use flexbox for horizontal alignment */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Wrap items onto the next line if necessary */
+    }
+
+    .navbar li {
+        margin-right: auto; /* Align button to the right on mobile */
+        margin: 0px 10px; /* Add space between items */
+    }
+
+    .navbar a {
+        padding: 5px 0px; /* Adjust padding for easier tapping */
+        display: block; /* Ensure full width for links */
+        text-align: center; /* Center text */
+    }
+
+    .btn-getstarted {
+        margin-left: auto; /* Align button to the right on mobile */
+        margin: 0px 10px; /* Add space between items */
+    }
+
+    .company-name {
+        display: none; 
+    }
+
+    .logo-img{
+        display: none;
+    }
+    .container-fluid{
+        display: none;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .information {
+        display: none;
+    }
+}
